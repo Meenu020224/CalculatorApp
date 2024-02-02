@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEF4"
+    android:gravity="left"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        android:background="#0B0A0A"/>
+
+    <TextClock
+        android:id="@+id/textdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEF4"
+        android:format12Hour="MMM dd yyyy"
+        android:gravity="left"
+        android:text="Date"
+        android:textColor="#0B0A0A"
+        android:textSize="12sp" />
+
+    <TextClock
+        android:id="@+id/textclockid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh:mm:ss"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="#0B0A0A"
+        android:textSize="17sp" />
+
+    <TextClock
+        android:id="@+id/textampmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="a"
+        android:gravity="left"
+        android:text="00:00:00"
+        android:textColor="#0B0A0A"
+        android:textSize="8sp" />
+
+    <include
+        layout="@layout/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A33E37" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="bottom">
+
+        <include
+            layout="@layout/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
